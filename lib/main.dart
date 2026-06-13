@@ -24,6 +24,7 @@ const List<NavItem> kNavItems = [
 ];
 
 class MyApp extends StatelessWidget {
+ 
   const MyApp({super.key});
 
   static final GoRouter _router = GoRouter(
@@ -58,7 +59,7 @@ class MyApp extends StatelessWidget {
             builder: (BuildContext context, GoRouterState state) {
               return const _SectionPage(
                 title: 'Settings',
-                subtitle: 'Configure app preferences for web.',
+                subtitle: 'Configure app preferences ',
                 color: Color(0xFFFFF8E1),
               );
             },
@@ -196,3 +197,4 @@ class _SectionPage extends StatelessWidget {
     );
   }
 }
+
